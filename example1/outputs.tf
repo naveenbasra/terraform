@@ -4,9 +4,9 @@ output "instance_hostname" {
 }
 
 output "instance_security_group_ids" {
-  value = aws_instance.app_server.vpc_security_group_ids
+  value = aws_instance.example.vpc_security_group_ids
 }
 
 output "instance_subnet" {
-  value = aws_instance.app_server.subnet_id
+  value = aws_instance.example.subnet_id
 }
