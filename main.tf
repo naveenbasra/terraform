@@ -31,10 +31,6 @@ tags {
   }
 }
 
-variable "port_number" {
-description     =       "HTTP port number on which server will listen"
-default         =       "8080"
-}
 
 output "public_ip"  {
 value 	=	"${aws_instance.example.public_ip}"
