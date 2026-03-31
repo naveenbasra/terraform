@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "us-east-1"
+  region = "ap-southeast-2"
 }
 
 
@@ -24,11 +24,6 @@ user_data = <<-EOF
      echo "Hello World" > index.html
      nohup busybox httpd -f -p "${var.port_number}" &
      EOF
-
-
-tags {
-    Name = "terraform-example"
-  }
 }
 
 
